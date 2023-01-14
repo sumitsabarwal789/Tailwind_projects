@@ -1,2 +1,4 @@
 # Tailwind_projects
- Building clones using tailwind css
+
+ Please use this command given below to download node modules folder into your directory
+ npm init
