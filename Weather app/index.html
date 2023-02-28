@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <title>Mr Weather | Get to know about weather anytime anywhere</title>
+</head>
+<body class="bg-gradient-to-r from-sky-400 to-blue-800">
+   <nav class="navbar flex flex-row justify-between">
+    <div class="flex flex-row">
+     <h1 class="font-bold ml-5 my-4 text-white">Mr.Weather</h1>
+     <img class="h-12 my-2 mx-2" src="img/logo.png" alt="">
+    </div>
+    <div class="lg:mr-10 my-2 flex flex-col lg:flex-row mr-2 ">
+        <input id="city" class=" border text-center px-0 hidden lg:inline-block bg-blue-800 text-white" type="text" placeholder="Search City">
+        <button id="submit">
+            <i  class="fa-solid fa-magnifying-glass py-3   text-2xl  px-4 pt-1 lg:pt-3  lg:border lg:border-white"></i>
+        </button>
+    </div>
+</nav>
+<input id="city2" class=" text-center w-full font-bold py-2 lg:hidden text-white bg-gradient-to-r from-sky-400 to-blue-800 " type="text" placeholder="Search City">
+
+<h1 class="text-white text-center font-medium text-xl md:text-4xl lg:text-5xl mt-24">Weather for <span id="cityName"></span></h1>
+<section class="cards mt-14 flex flex-col lg:flex-row mx-10 space-y-10 lg:space-y-0 lg:justify-center space-x-0 lg:space-x-10">
+    <div class="card1 bg-white text-center px-6 py-8 rounded-lg shadow-xl shadow-blue-900 ">
+        <h1 class="font-bold text-4xl">Temperatures</h1>
+        <ul class="mt-5 text-2xl space-y-1 text-start">
+            <li>Temperature is <span id="temp"></span> <span>&#8451;</span></li>
+            <li>Minimun temperature is <span id="min_temp"></span><span>&#8451;</span></li>
+            <li>Maximum Temperature is <span id="max_temp"></span><span>&#8451;</span></li>
+        </ul>
+
+    </div>
+
+    <div class="card2 bg-white text-center px-3  py-8 rounded-lg shadow-xl shadow-blue-900 ">
+        <h1 class="font-bold text-4xl ">Wind and Humidity</h1>
+        <ul class="mt-5 text-2xl space-y-1 text-start px-4">
+            <li>Wind Speed is <span id="wind_speed"></span><span> Miles</span></li>
+            <li>Wind Degree is <span id="wind_degrees"></span><span>&deg;</span></li>
+            <li>Humidity <span id="humidity"></span><span> %</span></li>
+    </div>
+
+    <div class="card3 bg-white text-center px-6 py-8 rounded-lg shadow-xl shadow-blue-900 ">
+        <h1 class="font-bold text-4xl">Sun and Cloud</h1>
+        <ul class="mt-5 text-2xl space-y-1 text-start">
+            <li>Cloud PCT is <span id="cloud_pct"></span></li>
+            <li>Sunrise at <span id="sunrise"></span></li>
+            <li>Sunset at <span id="sunset"></span></li>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
