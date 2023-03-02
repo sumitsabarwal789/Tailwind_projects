@@ -33,17 +33,20 @@
             <button class="bg-[#A92629] rounded-2xl px-8 text-sm  text-white">Online Admission</button>
         </div>
     </div>
-    <div class="slider flex md:bg-cover  md:w-[100%] overflow-hidden h-[40%] md:relative ">
-        <img class=" md:bg-cover xl:w-[200%]" src="images/slider/download (1).jpeg" alt="">
-        <div
-            class="inslider w-[90%] mt-56 ml-14 bg-black text-white md:absolute border-black border-[1px] bg-opacity-50 text-center xl:mt-72 xl:w-[80%] xl:ml-36">
-            <h1 class="text-4xl   font-bold w-[50%] ml-48">
-                <span class="font-normal">Golden Jubilee Celebration</span>
-                1967 to 2017
-            </h1>
-        </div>
-    </div>
-    <section class="md:flex flex-row">
+    <section class="slider m-auto w-[100%] relative mb-96">
+        <img class="slide absolute w-[100%] h-[500px]" src="images/picture_galllery/img2.jpeg" alt="">
+        <img class="slide absolute w-[100%] h-[500px]" src="images/picture_galllery/img3.jpeg" alt="">
+        <img class="slide absolute w-[100%] h-[500px]" src="images/picture_galllery/img5.jpeg" alt="">
+        <img class="slide absolute w-[100%] h-[500px]" src="images/picture_galllery/1602603205_814.jpeg" alt="">
+       
+    </section>
+    <nav class=" pt-40 flex justify-center space-x-10">
+        <button onclick="goPrev()" 
+        class="btn  border-black border-[0.1px] relative bg-[#095a83] w-40 py-2 text-white before:font-bold rounded-md before:absolute before:bottom-0 before:right-0 before:border-t-[20px] before:border-t-black before:border-r-[15px]  before:border-r-white before:w-0">&lt; Previous</button>
+        <button onclick="goNext()"
+        class="btn  border-black border-[0.1px] relative bg-[#095a83] w-40 py-2 text-white before:font-bold rounded-md before:absolute before:bottom-0 before:right-0 before:border-t-[20px] before:border-t-black before:border-r-[15px]  before:border-r-white before:w-0">Next &gt;</button>
+    </nav>
+    <section class="md:flex flex-row pt-10">
         <section>
             <div class="header mt-7 ml-7 ">
                 <h1 class=" font-bold w-[75%] text-xl md:text-3xl md:w-[100%]">
@@ -338,6 +341,8 @@
     <section class="end bg-black text-center py-5">
         <footer><a class="text-white font-bold " href="/index"> Seven Set Higher Secondary School (Secondary Section)</a></footer>
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
